@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: antiquewhite;
+            align-items: left;
+        }
+        nav ul{
+            background-color: black;
+          padding-top: 20px;
+          margin-bottom: 100px;
+        
+          display: flex;
+        padding: 0 0px;
+          align-items: center;
+          padding-right: 100px;
+          width: 100%;
+        }
+        
+        
+        .button{
+            color: white;
+            text-decoration: none;
+            list-style-type: none;
+           cursor: pointer;
+           transition: transform 2s ease-in 2s;
+          
+        }
+        .button:hover{
+            font-size: 28px;
+            color: lightgrey;
+        }
+   
+        .list{
+            display: flex;
+            margin: 0;
+            padding: 0;
+           gap: 15px;
+           font-size: 25px;
+           align-items: center;
+           
+         
+        }
+        .image{
+            width: 80px;
+         
+            margin-right: 0;
+            padding: 0;
+      
+        }
+           .brand{
+    margin-top: 8px;
+            text-decoration: none;
+            list-style-type: none;
+         align-items: left;
+       
+           }
+           .name{
+                color: white;
+            text-decoration: none;
+            list-style-type: none;
+            margin-left: -20px;
+          font-weight: bold;
+           }
+           .container{
+            min-height: 75vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            width: 70%;
+            margin:  auto;
+            margin-top: 23px;
+            margin-bottom: 23px;
+            border-radius: 10px;
+background-image: url("12-Rare-aspects-of-the-genius-that-was-Kishore-Kumar.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: left center;
+padding: 20px;
+
+           }
+           .bottom{
+            display: flex;
+            height: 110px;
+          position: sticky;
+          bottom: 0;
+          background-color: rgb(0, 0, 0);
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      
+           }
+           #myProgressbar{
+            width: 175vh;
+            cursor: pointer;
+           
+           }
+           .fa-play{
+            color: white;
+            font-size: 40px;
+margin: 0;
+padding: 0;
+cursor: pointer;
+           }
+           .fa-forward{
+            color: white;
+            font-size: 40px;
+      margin: 0 8px;
+      cursor: pointer;
+           }
+            .fa-backward{
+            color: white;
+            font-size: 40px;
+          margin: 0 10px;
+          cursor: pointer;
+           }
+           .icons{
+            display: flex;
+            flex-direction: row;
+           margin-top: 10px;
+
+           }
+           .container h2{
+            font-size: 35px;
+            font-weight: bold;
+           }
+        .songitem{
+            height: 50px;
+            display: flex;
+            background-color: white;
+            color: crimson;
+            margin: 10px 0;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 30px;
+        }
+        .songitem img{
+            height: 50px;
+            border-radius: 30px;
+        }
+        .songlistcontainer{
+            margin-top: 70px;
+        }
+        .playing{
+            margin-top: 5px;
+            height: 9px;
+            margin-bottom: 4px;
+            margin-right: 3px;
+
+        }
+        .songinfo{
+            display: flex;
+            flex-direction: row;
+            color: white;
+          font-size: 12px;
+          align-items: center;
+          margin-right: 200px;
+          position: absolute;
+          left: 10vw;
+
+        }
+        .songinfo img{
+          
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.songItemPlay .fa-play-circle{
+    cursor: pointer;
+    margin-top: 3px;
+}
+#masterplay {
+    color: white;
+    font-size: 40px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+#masterplay:hover {
+    color: lightgray;
+}
+.fa-play-circle{
+    margin: auto 3px;
+    cursor: pointer;
+}
+#masterSongName{
+ font-size: 20px;    
+}
+
+        
+
+           
+    </style>
+</head>
+<body>
+    <nav>
+<ul class="list">
+   
+</ul>
+        <ul class="list">
+             <li class="brand">
+<img src="download.jpeg" alt="" class="image">
+</li>
+<li class="name">geet-gata-chal</li>
+           <li class="button">Home</li>
+           <li class="button">About</li>
+           <li class="button">Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+      
+        <div class="songlist">
+               <h2>Best of Kishore Kumar</h2>
+                 <div class="songlistcontainer">
+               <div>
+                <div class="songitem">
+                    <img >
+                    <span class="songname">Dukhi Man Mere</span>
+                    <span class="songplay"><span>3:07<i id="0" class='fas songItemPlay fa-play-circle'></i ></span></span>
+                    
+                </div>
+                <div class="songitem">
+                    <img  alt="">
+                    <span class="songname">Mere Mehboob Qayamat Hogi</span>
+                    <span class="songplay"><span class="timestamp">3:48<i id="1" class='fas songItemPlay fa-play-circle'></i ></span></span>
+                    
+                </div>
+                <div class="songitem">
+                    <img  alt="">
+                    <span class="songname">Panna ki Tamanna Hai</span>
+                    <span class="songplay"><span>5:34<i id="2" class='fas songItemPlay fa-play-circle'></i ></span></span>
+                    
+                </div>
+                <div class="songitem">
+                    <img >
+                    <span class="songname">Chala Jata hoon</span>
+                    <span class="songplay"><span>5:34<i id="3" class='fas songItemPlay fa-play-circle'></i ></span></span>
+                    
+                </div>
+                <div class="songitem">
+                    <img  alt="">
+                    <span class="songname">Aaj Jama Hain Kunj Gali Men</span>
+                    <span class="songplay"><span>5:34<i id="4" class='fas songItemPlay fa-play-circle'></i ></span></span>
+                    
+                </div>
+                <div class="songitem">
+                    <img  alt="">
+                    <span class="songname">Aaj Jama Hain Kunj Gali Men</span>
+                    <span class="songplay"><span>5:34<i id="5" class='fas songItemPlay fa-play-circle'></i ></span></span>
+                    
+                </div>
+                <div class="songitem">
+                    <img  alt="">
+                    <span  class="songname">Aaj Jama Hain Kunj Gali Men</span>
+                    <span class="songplay"><span>5:34<i id="6" class='fas songItemPlay fa-play-circle'></i ></span></span>
+                    
+                </div>
+                <div class="songitem">
+                    <img  alt="">
+                    <span  class="songname">Aaj Jama Hain Kunj Gali Men</span>
+                    <span class="songplay"><span>5:34<i id="7" class='fas songItemPlay fa-play-circle'></i ></span></span>
+                    
+                </div>
+                <div class="songitem">
+                    <img src="">
+                    <span  class="songname">Aaj Jama Hain Kunj Gali Men</span>
+                    <span class="songplay"><span>5:34<i id="8" class='fas songItemPlay fa-play-circle'></i ></span></span>
+                    
+                </div>
+                <div class="songitem">
+                    <img  alt="">
+                    <span  class="songname">Aaj Jama Hain Kunj Gali Men</span>
+                    <span class="songplay"><span>5:34<i id="9" class='fas songItemPlay fa-play-circle'></i ></span></span>
+                    
+                </div>
+                </div>
+          
+                    
+                </div>
+               </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" min="0" max="100" id="myProgressbar" value="0">
+        <div class="icons">
+    <i class=" fa-solid fa-backward" id="previous"></i>
+  <i class=" fa-solid fa-play" id="masterplay"></i>
+  <i class=" fa-solid fa-forward" id="next"></i>
+
+  </div>
+  <div class="songinfo">
+    <img src="playing.gif" alt="" class="playing" id="gif"> <span id="masterSongName">Mere Mehboob Qayamat Hogi</span>
+  </div>
+    </div>
+       
+   <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+</body>
+</html>
